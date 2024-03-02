@@ -6,7 +6,7 @@ namespace PRS.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Sdd = new[]
+        private static readonly string[] Designitions = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Malicious", "Boiling"
         };
