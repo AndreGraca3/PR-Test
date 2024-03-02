@@ -8,7 +8,7 @@ namespace PRS.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Malicious", "Boiling"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -16,6 +16,7 @@ namespace PRS.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+            logger.LogDebug("This is a debug message");
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
