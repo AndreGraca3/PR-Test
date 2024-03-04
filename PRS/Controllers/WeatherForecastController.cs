@@ -16,7 +16,7 @@ namespace PRS.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
-            logger.LogDebug("This is a debug message");
+            logger.LogDebug("This is aa debug message");
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
